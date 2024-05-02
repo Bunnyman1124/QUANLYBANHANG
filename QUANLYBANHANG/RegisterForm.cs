@@ -16,5 +16,17 @@ namespace QUANLYBANHANG
         {
             InitializeComponent();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 frm1 = new Form1();
+            this.Close();
+            frm1.Show();
+        }
     }
 }

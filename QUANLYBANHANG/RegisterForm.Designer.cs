@@ -30,10 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.close = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.tb_password = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btsignup = new System.Windows.Forms.Button();
@@ -42,11 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.tb_password = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -63,14 +63,16 @@
             this.panel1.Size = new System.Drawing.Size(977, 43);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // label6
             // 
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 477);
-            this.panel2.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label6.Location = new System.Drawing.Point(457, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 25);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Hello Welcome ";
             // 
             // close
             // 
@@ -87,13 +89,33 @@
             this.close.Size = new System.Drawing.Size(55, 43);
             this.close.TabIndex = 1;
             this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(380, 477);
+            this.panel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(380, 477);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.tb_password);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btsignup);
@@ -108,15 +130,33 @@
             this.panel3.Size = new System.Drawing.Size(597, 477);
             this.panel3.TabIndex = 2;
             // 
-            // label4
+            // panel6
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label4.Location = new System.Drawing.Point(329, 436);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 16);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Already have  Accout";
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Location = new System.Drawing.Point(49, 262);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(56, 56);
+            this.panel6.TabIndex = 22;
+            // 
+            // tb_password
+            // 
+            this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_password.Location = new System.Drawing.Point(213, 283);
+            this.tb_password.Name = "tb_password";
+            this.tb_password.Size = new System.Drawing.Size(338, 34);
+            this.tb_password.TabIndex = 21;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(111, 291);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 23);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Password";
             // 
             // panel5
             // 
@@ -203,54 +243,18 @@
             this.label1.Tag = "";
             this.label1.Text = "Sign Up";
             // 
-            // panel6
+            // linkLabel1
             // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Location = new System.Drawing.Point(49, 262);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(56, 56);
-            this.panel6.TabIndex = 22;
-            // 
-            // tb_password
-            // 
-            this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_password.Location = new System.Drawing.Point(213, 283);
-            this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(338, 34);
-            this.tb_password.TabIndex = 21;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(111, 291);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 23);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Password";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(380, 477);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.label6.Location = new System.Drawing.Point(457, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 25);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Hello Welcome ";
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.linkLabel1.Location = new System.Drawing.Point(329, 436);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(134, 16);
+            this.linkLabel1.TabIndex = 23;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Already have  Accout";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // RegisterForm
             // 
@@ -279,7 +283,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button close;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btsignup;
@@ -293,5 +296,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
