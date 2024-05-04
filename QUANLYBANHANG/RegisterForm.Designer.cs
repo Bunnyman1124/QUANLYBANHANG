@@ -35,8 +35,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.tb_password = new System.Windows.Forms.TextBox();
+            this.tb_cpassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -46,7 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -114,7 +114,7 @@
             // 
             this.panel3.Controls.Add(this.linkLabel1);
             this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.tb_password);
+            this.panel3.Controls.Add(this.tb_cpassword);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
@@ -130,6 +130,19 @@
             this.panel3.Size = new System.Drawing.Size(597, 477);
             this.panel3.TabIndex = 2;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.linkLabel1.Location = new System.Drawing.Point(329, 436);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(134, 16);
+            this.linkLabel1.TabIndex = 23;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Already have  Accout";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // panel6
             // 
             this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
@@ -139,13 +152,13 @@
             this.panel6.Size = new System.Drawing.Size(56, 56);
             this.panel6.TabIndex = 22;
             // 
-            // tb_password
+            // tb_cpassword
             // 
-            this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_password.Location = new System.Drawing.Point(213, 283);
-            this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(338, 34);
-            this.tb_password.TabIndex = 21;
+            this.tb_cpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cpassword.Location = new System.Drawing.Point(273, 280);
+            this.tb_cpassword.Name = "tb_cpassword";
+            this.tb_cpassword.Size = new System.Drawing.Size(246, 34);
+            this.tb_cpassword.TabIndex = 21;
             // 
             // label7
             // 
@@ -154,9 +167,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(111, 291);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 23);
+            this.label7.Size = new System.Drawing.Size(156, 23);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Password";
+            this.label7.Text = "Confrim Password";
             // 
             // panel5
             // 
@@ -185,27 +198,28 @@
             this.btsignup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsignup.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btsignup.ForeColor = System.Drawing.Color.Cyan;
-            this.btsignup.Location = new System.Drawing.Point(250, 359);
+            this.btsignup.Location = new System.Drawing.Point(273, 358);
             this.btsignup.Name = "btsignup";
-            this.btsignup.Size = new System.Drawing.Size(269, 49);
+            this.btsignup.Size = new System.Drawing.Size(246, 49);
             this.btsignup.TabIndex = 15;
             this.btsignup.Text = "Sign Up";
             this.btsignup.UseVisualStyleBackColor = true;
+            this.btsignup.Click += new System.EventHandler(this.btsignup_Click);
             // 
             // tbpassword
             // 
             this.tbpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbpassword.Location = new System.Drawing.Point(213, 207);
+            this.tbpassword.Location = new System.Drawing.Point(273, 204);
             this.tbpassword.Name = "tbpassword";
-            this.tbpassword.Size = new System.Drawing.Size(338, 34);
+            this.tbpassword.Size = new System.Drawing.Size(246, 34);
             this.tbpassword.TabIndex = 14;
             // 
             // tbusername
             // 
             this.tbusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbusername.Location = new System.Drawing.Point(213, 131);
+            this.tbusername.Location = new System.Drawing.Point(273, 128);
             this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(338, 34);
+            this.tbusername.Size = new System.Drawing.Size(246, 34);
             this.tbusername.TabIndex = 13;
             // 
             // label3
@@ -243,19 +257,6 @@
             this.label1.Tag = "";
             this.label1.Text = "Sign Up";
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkLabel1.Location = new System.Drawing.Point(329, 436);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(134, 16);
-            this.linkLabel1.TabIndex = 23;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Already have  Accout";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,7 +293,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox tb_password;
+        private System.Windows.Forms.TextBox tb_cpassword;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label6;
