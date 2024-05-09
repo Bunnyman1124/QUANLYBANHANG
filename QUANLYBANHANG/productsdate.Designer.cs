@@ -1,6 +1,6 @@
 ﻿namespace QUANLYBANHANG
 {
-    partial class Form2
+    partial class productsdate
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form2
+            // productsdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 711);
+            this.ClientSize = new System.Drawing.Size(943, 561);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Name = "productsdate";
+            this.Text = "productsdate";
             this.ResumeLayout(false);
 
         }

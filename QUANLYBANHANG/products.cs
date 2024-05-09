@@ -7,19 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QUANLYBANHANG
 {
-    public partial class Form2 : Form
+    public partial class btnExit : Form
     {
-        public Form2()
+        public btnExit()
         {
             InitializeComponent();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

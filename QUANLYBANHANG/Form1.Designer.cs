@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.loginShowPassword = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btcancel = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tbusername = new System.Windows.Forms.TextBox();
             this.btlogin = new System.Windows.Forms.Button();
-            this.loginShowPassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,8 +98,22 @@
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // loginShowPassword
+            // 
+            this.loginShowPassword.AutoSize = true;
+            this.loginShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginShowPassword.ForeColor = System.Drawing.Color.Black;
+            this.loginShowPassword.Location = new System.Drawing.Point(323, 395);
+            this.loginShowPassword.Name = "loginShowPassword";
+            this.loginShowPassword.Size = new System.Drawing.Size(120, 20);
+            this.loginShowPassword.TabIndex = 19;
+            this.loginShowPassword.Text = "Show Password";
+            this.loginShowPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.loginShowPassword.UseVisualStyleBackColor = true;
+            // 
             // linkLabel1
             // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.linkLabel1.Location = new System.Drawing.Point(358, 594);
@@ -108,6 +122,7 @@
             this.linkLabel1.TabIndex = 17;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Sign Up here";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Fuchsia;
             // 
             // pictureBox1
             // 
@@ -124,7 +139,7 @@
             this.btcancel.BackColor = System.Drawing.Color.White;
             this.btcancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btcancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btcancel.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btcancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btcancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btcancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btcancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -205,12 +220,12 @@
             // 
             // btlogin
             // 
-            this.btlogin.BackColor = System.Drawing.Color.Blue;
+            this.btlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btlogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btlogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btlogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btlogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btlogin.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btlogin.ForeColor = System.Drawing.Color.Black;
@@ -221,19 +236,6 @@
             this.btlogin.Text = "Login";
             this.btlogin.UseVisualStyleBackColor = false;
             this.btlogin.Click += new System.EventHandler(this.btlogin_Click);
-            // 
-            // loginShowPassword
-            // 
-            this.loginShowPassword.AutoSize = true;
-            this.loginShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginShowPassword.ForeColor = System.Drawing.Color.Black;
-            this.loginShowPassword.Location = new System.Drawing.Point(323, 395);
-            this.loginShowPassword.Name = "loginShowPassword";
-            this.loginShowPassword.Size = new System.Drawing.Size(120, 20);
-            this.loginShowPassword.TabIndex = 19;
-            this.loginShowPassword.Text = "Show Password";
-            this.loginShowPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.loginShowPassword.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

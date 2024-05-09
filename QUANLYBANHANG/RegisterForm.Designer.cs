@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.signupShowPassword = new System.Windows.Forms.CheckBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.tb_cpassword = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.tbusername = new System.Windows.Forms.TextBox();
             this.btlogin = new System.Windows.Forms.Button();
-            this.signupShowPassword = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -98,6 +98,19 @@
             this.panel3.Size = new System.Drawing.Size(538, 649);
             this.panel3.TabIndex = 4;
             // 
+            // signupShowPassword
+            // 
+            this.signupShowPassword.AutoSize = true;
+            this.signupShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupShowPassword.ForeColor = System.Drawing.Color.Black;
+            this.signupShowPassword.Location = new System.Drawing.Point(323, 444);
+            this.signupShowPassword.Name = "signupShowPassword";
+            this.signupShowPassword.Size = new System.Drawing.Size(120, 20);
+            this.signupShowPassword.TabIndex = 18;
+            this.signupShowPassword.Text = "Show Password";
+            this.signupShowPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signupShowPassword.UseVisualStyleBackColor = true;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel8);
@@ -141,7 +154,7 @@
             this.btcancel.BackColor = System.Drawing.Color.White;
             this.btcancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btcancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btcancel.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.btcancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btcancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btcancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btcancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -237,19 +250,6 @@
             this.btlogin.TabIndex = 5;
             this.btlogin.Text = "Sign in";
             this.btlogin.UseVisualStyleBackColor = false;
-            // 
-            // signupShowPassword
-            // 
-            this.signupShowPassword.AutoSize = true;
-            this.signupShowPassword.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupShowPassword.ForeColor = System.Drawing.Color.Black;
-            this.signupShowPassword.Location = new System.Drawing.Point(323, 444);
-            this.signupShowPassword.Name = "signupShowPassword";
-            this.signupShowPassword.Size = new System.Drawing.Size(120, 20);
-            this.signupShowPassword.TabIndex = 18;
-            this.signupShowPassword.Text = "Show Password";
-            this.signupShowPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.signupShowPassword.UseVisualStyleBackColor = true;
             // 
             // RegisterForm
             // 

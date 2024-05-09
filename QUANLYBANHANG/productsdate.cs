@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace QUANLYBANHANG
 {
-    public partial class Mainfrom : Form
+    public partial class productsdate : Form
     {
-        public Mainfrom()
+        public productsdate()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void close_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
